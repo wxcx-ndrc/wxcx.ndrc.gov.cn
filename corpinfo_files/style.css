@@ -1,0 +1,485 @@
+body {
+  background: #eeeeee;
+  padding: 0;
+  margin: 0;
+}
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "微软雅黑";
+  font-size: 12px;
+}
+.clear {
+  content: "";
+  display: block;
+  clear: both;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  border: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: #1974A1;
+}
+.wrapper {
+  width: 980px;
+  margin: 0 auto;
+  padding: 0 11px;
+  background-color: #fff;
+  padding-bottom: 78px;
+}
+.header {
+  height: 106px;
+}
+.header ul li {
+  float: left;
+  width: 50%;
+  height: 106px;
+}
+.header ul li img {
+  width: 100%;
+  height: 106px;
+}
+.header ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.search {
+  height: 72px;
+  border: 1px solid #cecece;
+  background: url("../img/bg_03.png") repeat-x;
+  padding: 0 11px;
+}
+.search .sear_le {
+  font-size: 20px;
+  color: #004d80;
+  line-height: 72px;
+  float: left;
+}
+.search .sear_ri {
+  float: right;
+  width: 510px;
+}
+.search .sear_ri_top ul li {
+  float: left;
+  line-height: 26px;
+  min-width: 88px;
+  cursor: pointer;
+}
+.search .sear_ri_top ul li.active {
+  color: #f00;
+  font-weight: bold;
+}
+.search .sear_ri_top:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.contText {
+  padding: 0 26px;
+}
+.slideTxtBox {
+  width: 100%;
+  text-align: left;
+}
+.slideTxtBox .hd {
+  height: 40px;
+  position: relative;
+}
+.slideTxtBox .hd ul {
+  float: left;
+  position: absolute;
+  height: 32px;
+}
+.slideTxtBox .hd ul li {
+  float: left;
+  padding: 0 20px;
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+  margin-top: 7px;
+  font-size: 16px;
+  background: #f2f2f2;
+  border: 1px solid #dadada;
+  margin-right: 7px;
+  color: #8c8c8c;
+}
+.slideTxtBox .hd ul li.on {
+  height: 40px;
+  background: #1483cc;
+  border: 1px solid #ddd;
+  border-bottom: 2px solid #fff;
+  color: #ffffff;
+  margin-top: -1px;
+  line-height: 40px;
+}
+.slideTxtBox .bd ul {
+  padding: 15px;
+  zoom: 1;
+  border: 1px solid #cccccc;
+}
+.slideTxtBox .bd li {
+  font-size: 16px;
+  line-height: 30px;
+  /* color: #004d80;*/
+}
+.slideTxtBox .bd li b {
+  font-size: 16px;
+  line-height: 30px;
+  /*color: #004d80;*/
+}
+.slideTxtBox .bd:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.slideTxtBox .bd ul {
+  content: "";
+  display: block;
+  clear: both;
+}
+.slideTxtBox .bd li span {
+  line-height: 30px;
+  /*color: #004d80;*/
+  font-size: 16px;
+  width: 33%;
+  float: left;
+}
+.slideTxtBox .bd li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.slideTxtBox .bd li .date {
+  float: right;
+  color: #999;
+}
+.compInfor,
+.comDetInfor {
+  margin-top: 30px;
+}
+.compInfor h5 {
+  font-size: 26px;
+  line-height: 44px;
+  color: #00241d;
+}
+.compInfor .detailInfor {
+  padding: 12px 24px;
+  border: 1px solid #cccccc;
+  overflow: hidden;
+}
+.compInfor .detailInfor:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.compInfor .detailInfor ul {
+  width: 50%;
+  float: left;
+}
+.compInfor .detailInfor ul li {
+  font-size: 16px;
+  width: 100%;
+  float: left;
+  line-height: 30px;
+  /*color: #004d80;*/
+}
+.compInfor .detailInfor ul li span {
+  font-size: 16px;
+  /* color: #004d80;*/
+  font-weight: bold;
+}
+.compInfor .detailInfor ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.compInfor .detailInfor .yw_fw {
+  width: 50%;
+  float: left;
+  font-size: 16px;
+  line-height: 30px;
+  /*color: #004d80;*/
+}
+.compInfor .detailInfor .yw_fw span {
+  font-size: 16px;
+  font-weight: bold;
+}
+.footer {
+  height: 30px;
+  background: #004d80;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+/*
+  显示查询结果页面
+ */
+.jueryResult .resultTop {
+  border-bottom: 1px dashed #000000;
+  font-size: 14px;
+  color: #000000;
+  padding-top: 10px;
+  line-height: 30px;
+}
+.jueryResult .resultTop span {
+  color: #cc241d;
+  padding: 0 3px;
+  font-weight: bold;
+}
+.jueryResult .resultList ul li {
+  padding: 12px 5px;
+  border-bottom: 1px dashed #000000;
+}
+.jueryResult .resultList ul li .reListtop:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.jueryResult .resultList ul li .reListtop .liName {
+  font-size: 16px;
+  float: left;
+  line-height: 27px;
+}
+.jueryResult .resultList ul li .reListtop .liName span {
+  font-size: 16px;
+  color: #cc241d;
+}
+.jueryResult .resultList ul li .reListtop .liGrade {
+  font-size: 14px;
+  float: left;
+  background: url("../img/bbg_03.png") repeat-x;
+  min-width: 238px;
+  height: 27px;
+  line-height: 27px;
+  color: #ffffff;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: 12px;
+}
+.jueryResult .resultList ul li .enterNumber {
+  font-size: 14px;
+  margin-top: 15px;
+}
+.jueryWrap {
+  padding-bottom: 24px;
+}
+.page {
+  padding-top: 19px;
+  height: 26px;
+}
+.page span,
+.page a {
+  border: 1px solid #d9d9d9;
+  line-height: 24px;
+  padding: 0 10px;
+  display: inline-flex;
+  margin-right: 7px;
+  float: left;
+}
+.page a:hover {
+  background: #2f6699;
+  color: #ffffff;
+  border: 1px solid #2f6699;
+}
+.page a.active {
+  background: #2f6699;
+  color: #ffffff;
+  border: 1px solid #2f6699;
+}
+.page .inputPage {
+  width: 33px;
+  border: 1px solid #d9d9d9;
+  display: inline-flex;
+  height: 24px;
+  padding-left: 3px;
+  float: left;
+  margin-right: 7px;
+}
+.page .inputBtn {
+  width: 46px;
+  border: 1px solid #d9d9d9;
+  height: 26px;
+  background: none;
+  outline: none;
+  text-align: center;
+  float: left;
+}
+.searchJuery {
+  width: 766px;
+  height: 280px;
+  border: 1px solid #c2c6c8;
+  margin: 0 auto;
+  margin-top: 135px;
+}
+.searchJuery .serJurTop {
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  background: #004d80;
+  color: #ffffff;
+  font-size: 28px;
+}
+.searchJuery .serJurcont {
+  padding: 35px;
+}
+.bigJuery {
+  min-height: 490px;
+}
+.ser_bu_inse {
+  height: 30px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.inputBut {
+  width: 60px;
+  float: right;
+  background: url(../img/header_07.png) no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  font-size: 14px;
+  margin-top: 4px;
+  height: 30px;
+}
+.inputText {
+  padding-left: 5px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #333;
+  background: none;
+  width: 110px;
+  line-height: 30px;
+}
+.sear_ri_bott {
+  padding: 3px;
+}
+.serInput {
+  height: 38px;
+}
+.serInputSmll {
+  height: 38px;
+}
+.serInputbtn {
+  width: 86px;
+  height: 38px;
+}
+.serInputbTxt {
+  height: 38px;
+  width: 196px;
+  font-size: 16px;
+  line-height: 38px;
+}
+.serJurcont ul {
+  margin-bottom: 36px;
+}
+.serJurcont ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.serJurcont ul li {
+  float: left;
+  font-size: 16px;
+  margin-right: 50px;
+  height: 30px;
+  cursor: pointer;
+}
+.serJurcont ul li.active {
+  color: #cc241d;
+  background: url("../img/jiantou.png") no-repeat bottom center;
+}
+.tableInfor {
+  padding-top: 30px;
+}
+.tableInfor h5 {
+  font-size: 26px;
+  line-height: 44px;
+  font-weight: normal;
+  color: #00241d;
+}
+.tableDetils {
+  zoom: 1;
+}
+.tableDetils table {
+  collapse: 1;
+  border-collapse: collapse;
+}
+.tableDetils table tr {
+  font-size: 16px;
+}
+.tableDetils table tr th {
+  text-align: left;
+  padding: 10px 5px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+}
+.tableDetils table tr td {
+  padding: 8px 5px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+}
+.searchBox {
+  float: left;
+}
+.searchBoxTitle {
+  float: left;
+  line-height: 35px;
+  font-size: 14px;
+}
+.sear_ri_bott {
+  float: left;
+  margin-right: 20px;
+}
+.sear_ri_bott2 {
+  margin-right: 0;
+}
+.searchBox:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.searchBox2 {
+  float: left;
+}
+.searchBigBox:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.searchBox2:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.searchBoxBox:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.searchBoxBox {
+  border: 2px solid #cc241d;
+  padding-left: 10px;
+}
+.searchBox2Title {
+  font-size: 14px;
+  float: left;
+  line-height: 50px;
+}
+.searchBigBox {
+  border: 2px solid #cc241d;
+  padding: 5px 10px;
+}
